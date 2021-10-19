@@ -1,0 +1,563 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+        
+       
+       
+        
+        background: linear-gradient(-45deg, #c93fff,rgb(27,57,202,1),#c93fff, rgb(27,57,202,1),#c93fff,rgb(27,57,202,1),#c93fff, rgb(27,57,202,1));
+        background-size: 400% 400%;
+        animation: gradient 40s ease infinite; 
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%; 
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    } 
+
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(110, 107, 158, 0.5);
+    width: 15rem;
+    margin: 1rem;
+    margin-right: 0px;
+    border-radius: 10px;
+}
+
+.box-for-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: -2.5rem;
+    height: 100vh;
+   
+}
+
+/* ////////////////////////////////// button animation ///////////////////////////////////////// */
+
+button{
+    
+    position:relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    opacity: 0.;
+    background: none;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+
+.button-logo:hover{
+    background: linear-gradient(90deg,#E34C25,#264ED4,#F0DB4F);
+    background-size: 400%;
+}
+
+.button-logo:before{
+    content:'';
+    position:absolute;
+    background: inherit;
+    top:-5px;
+    right:-5px;
+    bottom: -5px;
+    left:-5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transition:opacity 0.5s;
+}
+
+.button-logo:hover:before{
+    opacity: 1;
+    z-index:-1;
+}
+
+button:hover{
+    z-index: 1;
+    animation: glow  10s linear infinite;
+}
+
+@keyframes glow{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+    
+}
+
+/*////////////////////////////////////////////////// OUTPUT ////////////////////////////////  */
+.output{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color: rgba(56, 49, 195, 0.5);
+    width: 100vw;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    
+   
+    width: 50%;
+    margin: 1rem;
+    margin-right: 0rem;
+    margin-right: 0%;
+    border-radius: 50px;
+    background-color:none
+    ;
+}
+
+            .box-top{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 0rem;
+                height: 5%;
+                border-radius: 50px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 0px;
+                background-color: rgba(154, 145, 177, 0.2);
+            }
+
+                                    .button-html{
+                                                display: flex;
+                                                flex-direction: row;
+                                                margin: 0rem;
+                                                margin-left: 1rem;
+                                                justify-content: space-around;
+                                            
+                                            }
+
+                                            img{
+                                                height: 40px;
+                                                align-items: center;
+                                            }
+                                            .button-html{
+                                               
+                                                align-items: center;
+                                                position:relative;
+                                                height: 30px;
+                                                width: 90px;
+                                               
+                                                border-radius: 20px;
+                                                border: solid rgb(227, 76, 38,0.2) ;
+                                                outline: none;
+                                                opacity: 1;
+                                                background:none;
+                                                color: rgb(212, 212, 212);
+                                                font-size: 15px;
+                                                font-weight: 600;
+                                                letter-spacing: 0px;
+                                                text-transform: uppercase;
+                                                cursor: pointer;
+                                                scroll-behavior: smooth;
+                                            }
+
+                                            .button-html:focus{
+                                                border: solid rgb(227, 76, 38);
+                                            }
+                                            
+                                            .button-html:hover{
+                                                background: linear-gradient(90deg,rgb(20, 29, 45, 0.75),#E34C25,rgb(20, 29, 45, 0.75),rgb(20, 29, 45, 0.75));
+                                                background-size: 900%;
+                                            }
+                                            
+                                            .button-html:before{
+                                                content:'';
+                                                position:absolute;
+                                                background: inherit;
+                                                top:-5px;
+                                                right:-5px;
+                                                bottom: -5px;
+                                                left:-5px;
+                                                border-radius: 50px;
+                                                filter: blur(1px);
+                                                opacity: 0;
+                                                transition:opacity 1s;
+                                            }
+                                            
+                                            .button-html:before{
+                                                opacity: 1;
+                                                z-index:-1;
+                                            }
+                                            
+                                            button:hover{
+                                                z-index: 1;
+                                                animation: glow  10s linear infinite;
+                                            }
+                                            
+                                            @keyframes glow{
+                                                0%{
+                                                    background-position: 0%;
+                                                }
+                                                100%{
+                                                    background-position: 400%;
+                                                }
+                                                
+                                            }
+
+                                    .button-css{
+                                                    margin: 1rem;
+                                                
+                                                align-items: right;
+                                                position:relative;
+                                                height: 30px;
+                                                width: 90px;
+                                            
+                                                border-radius: 20px;
+                                                border: solid rgb(38, 78, 212,0.5) ;
+                                                outline: none;
+                                                opacity: 1;
+                                                background:none;
+                                                color: rgb(212, 212, 212);
+                                                font-size: 15px;
+                                                font-weight: 900;
+                                                letter-spacing: 0px;
+                                                text-transform: uppercase;
+                                                cursor: pointer;
+                                                scroll-behavior: smooth;
+                                            }
+
+                                            .button-css:focus{
+                                                border: solid rgb(38, 78, 212) ;
+                                            }
+                                            
+                                            .button-css:hover{
+                                                background: linear-gradient(90deg,rgb(20, 29, 45, 0.75),#264ED4,rgb(20, 29, 45, 0.75),rgb(20, 29, 45, 0.75));
+                                                background-size: 900%;
+                                            }
+                                            
+                                            .button-css:before{
+                                                content:'';
+                                                position:absolute;
+                                                background: inherit;
+                                                top:-5px;
+                                                right:-5px;
+                                                bottom: -5px;
+                                                left:-5px;
+                                                border-radius: 50px;
+                                                filter: blur(1px);
+                                                opacity: 0;
+                                                transition:opacity 1s;
+                                            }
+                                            
+                                            .button-css:before{
+                                                opacity: 1;
+                                                z-index:-1;
+                                            }
+                                            
+                                            button:hover{
+                                                z-index: 1;
+                                                animation: glow  10s linear infinite;
+                                            }
+                                            
+                                            @keyframes glow{
+                                                0%{
+                                                    background-position: 0%;
+                                                }
+                                                100%{
+                                                    background-position: 400%;
+                                                }
+                                                
+                                            }
+
+                                    .button-js{
+                                                    margin: 1rem;
+                                                
+                                                align-items: center;
+                                                position:relative;
+                                                height: 30px;
+                                                width: 90px;
+                                                margin: 0rem;
+                                                border-radius: 20px;
+                                                border: solid rgb(240, 219, 81,0.2) ;
+                                                outline: none;
+                                                opacity: 1;
+                                                background:none;
+                                                color: rgb(212, 212, 212);
+                                                font-size: 15px;
+                                                font-weight: 900;
+                                                letter-spacing: 0px;
+                                                text-transform: uppercase;
+                                                cursor: pointer;
+                                                scroll-behavior: smooth;
+                                            }
+                                            .button-js:focus{
+                                                border: solid rgb(240, 219, 81) ; 
+                                            }
+                                            .button-js:hover{
+                                                background: linear-gradient(90deg,rgb(20, 29, 45, 0.75),#F0DB4F,rgb(20, 29, 45, 0.75),rgb(20, 29, 45, 0.75));
+                                                background-size: 900%;
+                                            }
+                                            
+                                            .button-js:before{
+                                                content:'';
+                                                position:absolute;
+                                                background: inherit;
+                                                top:-5px;
+                                                right:-5px;
+                                                bottom: -5px;
+                                                left:-5px;
+                                                border-radius: 50px;
+                                                filter: blur(1px);
+                                                opacity: 0;
+                                                transition:opacity 1s;
+                                            }
+                                            
+                                            .button-js:before{
+                                                opacity: 1;
+                                                z-index:-1;
+                                            }
+                                            
+                                            button:hover{
+                                                z-index: 1;
+                                                animation: glow  10s linear infinite;
+                                            }
+                                            
+                                            @keyframes glow{
+                                                0%{
+                                                    background-position: 0%;
+                                                }
+                                                100%{
+                                                    background-position: 400%;
+                                                }
+                                                
+                                            }
+
+                            
+            .box-center{
+                margin: 0rem;
+                height: 90%;
+                border-bottom-right-radius: 0px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-top-right-radius: 0px;
+
+                background-color: rgb(20, 29, 45, 0.75);
+            }
+            .box-bottom{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin:0;
+                height: 5%;
+                border-bottom-left-radius: 15px;
+                background-color: rgba(43, 26, 53, 0.5);
+            }
+
+                                .button-console{
+                                    margin: 1rem;
+
+                                    align-items: center;
+                                    position:relative;
+                                    height: 15rem;
+                                    width: 40rem;
+                                    margin: 0.5rem;
+                                    height: 8rem;
+                            
+                                    border-radius: 20px;
+                                    border: solid #080808 ;
+                                    outline: none;
+                                    opacity: 1;
+                                    background: rgba(34, 7, 44, 0.75);
+                                    color: rgba(243, 240, 240, 0.6);
+                                    font-size: 12px;
+                                    font-weight: 800;
+                                    letter-spacing: 0px;
+                                    text-transform: uppercase;
+                                    cursor: pointer;
+                                    scroll-behavior: smooth;
+                                }
+                                
+                                .button-console:focus{
+                                    background-color: rgb(66, 124, 63);
+                                    color: black;
+                                    font-weight: 600;
+                            
+                                   
+                                }
+                                    .button-console:hover{
+                                    background: linear-gradient(90deg,rgba(56, 49, 195, 0.5),#000000,rgb(20, 29, 45, 0.75),rgba(56, 49, 195, 0.5));
+                                    background-size: 900%;
+                                    }
+
+                                    .button-console:before{
+                                    content:'';
+                                    position:absolute;
+                                    background: inherit;
+                                    top:-5px;
+                                    right:-5px;
+                                    bottom: -5px;
+                                    left:-5px;
+                                    border-radius: 50px;
+                                    filter: blur(1px);
+                                    opacity: 0;
+                                    transition:opacity 1s;
+                                    }
+
+                                    .button-console:before{
+                                    opacity: 1;
+                                    z-index:-1;
+                                    }
+
+
+                                    button:hover{
+                                    z-index: 1;
+                                    animation: glow  10s linear infinite;
+                                    }
+
+
+                                    @keyframes glow{
+                                    0%{
+                                        background-position: 0%;
+                                    }
+                                    100%{
+                                        background-position: 400%;
+                                    }
+
+                    }
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 1rem;
+    margin-right: 1rem;
+    margin-left: 0rem;
+    background-color: none;
+
+}
+                .box2-top{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:flex-end;
+                    align-items: center;
+                    padding-right: 1rem;
+                  
+                    height: 5%;
+                    border-bottom-left-radius: 0px;
+                    border-top-left-radius: 0px;
+                    border-bottom-right-radius: 0px;
+                    border-top-right-radius: 20px;
+    
+                   
+                    background-color: rgba(209, 209, 209, 0.6);
+                }
+
+                                .button-send{
+                                            margin: 1rem;
+
+                                            align-items: center;
+                                            position:relative;
+                                            height: 30px;
+                                            width: 90px;
+                                            margin: 0rem;
+                                            border-radius: 20px;
+                                            border: solid rgb(16, 187, 0,0.4) ;
+                                            outline: none;
+                                            opacity: 1;
+                                            background: rgb(20, 29, 45, 0.75);
+                                            color: rgb(212, 212, 212);
+                                            font-size: 12px;
+                                            font-weight: 900;
+                                            letter-spacing: 0px;
+                                            text-transform: uppercase;
+                                            cursor: pointer;
+                                            scroll-behavior: smooth;
+                                            }
+
+                                            .button-send:focus{
+                                                border: solid rgb(16, 187, 0);
+                                                
+                                            }
+
+                                            .button-send:hover{
+                                            background: linear-gradient(90deg,rgb(20, 29, 45, 0.75),#0d9700,rgb(20, 29, 45, 0.75),rgb(20, 29, 45, 0.75));
+                                            background-size: 900%;
+                                            }
+
+                                            .button-send:before{
+                                            content:'';
+                                            position:absolute;
+                                            background: inherit;
+                                            top:-5px;
+                                            right:-5px;
+                                            bottom: -5px;
+                                            left:-5px;
+                                            border-radius: 50px;
+                                            filter: blur(1px);
+                                            opacity: 0;
+                                            transition:opacity 1s;
+                                            }
+
+                                            .button-send:before{
+                                            opacity: 1;
+                                            z-index:-1;
+                                            }
+
+                                            button:hover{
+                                            z-index: 1;
+                                            animation: glow  10s linear infinite;
+                                            }
+
+                                            @keyframes glow{
+                                            0%{
+                                                background-position: 0%;
+                                            }
+                                            100%{
+                                                background-position: 400%;
+                                            }
+
+}
+
+.box-center-right{
+    margin: 0rem;
+    height: 90%;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.box-bottom-right{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 15px;
+    background-color: blue;
+  
+    margin: 0rem;
+    height: 5%;
+}
